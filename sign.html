@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+    <title>Sign Up</title>
+    <style>
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> <!-- Replace 'logo.png' with the URL of your logo -->
+        </div>
+        <h2>Sign Up</h2>
+        <form action="#" method="post" id="signupForm" onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <span id="usernameError" class="error-message"></span>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <span id="emailError" class="error-message"></span>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError" class="error-message"></span>
+            
+            <label for="account_type">Account Type:</label>
+            <select id="account_type" name="account_type" onchange="toggleSellerFields()" required>
+                <option value="">Select Account Type</option>
+                <option value="seller">Seller</option>
+                <option value="customer">Customer</option>
+            </select>
+            
+            <!-- Seller-specific fields -->
+            <div class="seller-fields">
+                <label for="store_name">Store Name:</label>
+                <input type="text" id="store_name" name="store_name">
+                <span id="storeNameError" class="error-message"></span>
+                
+                <label for="business_type">Business Type:</label>
+                <select id="business_type" name="business_type">
+                    <option value="">Select Business Type</option>
+                    <option value="retail">Retail</option>
+                    <option value="wholesale">Wholesale</option>
+                </select>
+                <span id="businessTypeError" class="error-message"></span>
+            </div>
+            
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleSellerFields() {
+            var accountType = document.getElementById("account_type").value;
+            var sellerFields = document.querySelector(".seller-fields");
+
+            if (accountType === "seller") {
+                sellerFields.style.display = "block";
+            } else {
+                sellerFields.style.display = "none";
+            }
+        }
+
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var accountType = document.getElementById("account_type").value;
+            var storeName = document.getElementById("store_name").value;
+            var businessType = document.getElementById("business_type").value;
+
+            var isValid = true;
+
+            if (username === "") {
+                document.getElementById("usernameError").innerHTML = "Username is required";
+                isValid = false;
+            } else {
+                document.getElementById("usernameError").innerHTML = "";
+            }
+
+            if (email === "") {
+                document.getElementById("emailError").innerHTML = "Email is required";
+                isValid = false;
+            } else {
+                document.getElementById("emailError").innerHTML = "";
+            }
+
+            if (password === "") {
+                document.getElementById("passwordError").innerHTML = "Password is required";
+                isValid = false;
+            } else {
+                document.getElementById("passwordError").innerHTML = "";
+            }
+
+            if (accountType === "seller") {
+                if (storeName === "") {
+                    document.getElementById("storeNameError").innerHTML = "Store Name is required";
+                    isValid = false;
+                } else {
+                    document.getElementById("storeNameError").innerHTML = "";
+                }
+
+                if (businessType === "") {
+                    document.getElementById("businessTypeError").innerHTML = "Business Type is required";
+                    isValid = false;
+                } else {
+                    document.getElementById("businessTypeError").innerHTML = "";
+                }
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
