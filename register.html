@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Registration</title>
+    <link rel="shortcut icon" href="PICTURE/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="REG.CSS">
+    <style>
+         </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="PICTURE/logo.png"  height="100" alt="Company Logo"> <!-- Add your logo image URL here -->
+        </div>
+        <h2>Seller Registration</h2>
+        <form action="/submit_seller" method="POST">
+            <div class="form-group">
+                <label for="organization_name">Business Name:</label>
+                <input type="text" id="organization_name" name="organization_name" required>
+            </div>
+            <div class="form-group">
+                <label for="company_address">Company Address:</label>
+                <textarea id="company_address" name="company_address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="point_of_contact">Point of Contact:</label>
+                <input type="text" id="point_of_contact" name="point_of_contact" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="company_overview">Company Overview:</label>
+                <textarea id="company_overview" name="company_overview" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="general_details">General Details of Services/Goods:</label>
+                <textarea id="general_details" name="general_details" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="establishment_date">Establishment Date:</label>
+                <input type="date" id="establishment_date" name="establishment_date" required>
+            </div>
+            <div class="form-group">
+                <label for="business_type">Business Type:</label>
+                <input type="text" id="business_type" name="business_type" required>
+            </div>
+            <div class="form-group">
+                <label>Are you licensed?</label><br>
+                <input type="radio" id="licensed_yes" name="licensed" value="yes" required>
+                <label for="licensed_yes">Yes</label>
+                <input type="radio" id="licensed_no" name="licensed" value="no">
+                <label for="licensed_no">No</label>
+            </div>
+            <div class="form-group">
+                <label>Are you insured?</label><br>
+                <input type="radio" id="insured_yes" name="insured" value="yes" required>
+                <label for="insured_yes">Yes</label>
+                <input type="radio" id="insured_no" name="insured" value="no">
+                <label for="insured_no">No</label>
+            </div>
+            <div class="form-group">
+                <label for="banking_information">Banking Information:</label>
+                <textarea id="banking_information" name="banking_information" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="company_representative_signature">Company Representative Signature:</label>
+                <input type="text" id="company_representative_signature" name="company_representative_signature" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+        <p>By Clicking Register Button,You Agree To Our<br>
+            <a href="Rulesandregulation.html">Rules And Regulation </a>
+            </p>
+        </div>
+    </div>
+    </div>
+</body>

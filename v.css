@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('PICTURE/VVV.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .voucher-code {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .special-offer {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .claim-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .claim-button:hover {
+    background-color: #45a049;
+  }
+
+  .terms {
+    font-size: 14px;
+    margin-top: 20px;
+  }

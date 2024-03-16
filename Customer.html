@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert | Export html Table to CSV & EXCEL File</title>
+    <link rel="stylesheet" type="text/css" href="strs.css">
+    <link rel="shortcut icon" href="PICTURE/logo.png" type="image/X-icon"/>
+    <title>Customer Orders</title>
+</head>
+
+<body>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <h1>Customer's Orders</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="PICTURE/logo.png" alt="">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="picture/pdf.png" alt=""></label>
+
+                    <label for="export-file" id="toCSV">CSV <img src="picture/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="PICTURE/excel.png" alt=""></label>
+                </div>
+            </div>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Username <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Customer <span class="icon-arrow">&UpArrow;</span></th>
+                        <th>Loyalty <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Location <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Order Date <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Status <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Amount <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> @wendellnimo</td>
+                        <td> <img src="picture/wen.jpg" alt="">Wendell Nimo</td>
+                        <td> Gold</td>
+                        <td> Daraga Albay</td>
+                        <td> 10 March, 2024</td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                        <td> <strong> ₱100.00</strong></td>
+                    </tr>
+                    <tr>
+                        <td> @Trisha </td>
+                        <td><img src="picture/tri.jpg" alt=""> Trisha </td>
+                        <td> Bronze</td>
+                        <td>Ligao City </td>
+                        <td> 11 March, 2024</td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>₱150.00</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> @maebon</td>
+                        <td><img src="picture/mae.jpg" alt=""> Mae Bon</td>
+                        <td> Silver</td>
+                        <td> Guinobatan</td>
+                        <td> 09 Mar, 2024 </td>
+                        <td>
+                            <p class="status shipped">Shipped</p>
+                        </td>
+                        <td> <strong>₱200.00</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> @Roxanne</td>
+                        <td><img src="picture/rox.jpg" alt=""> Roxanne Puyat </td>
+                        <td> Gold</td>
+                        <td> Tabaco  City</td>
+                        <td> 03 March, 2024 </td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                        <td> <strong>₱150.00</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> @andrew</td>
+                        <td><img src="picture/an.jpg" alt=""> Andrew Cruz </td>
+                        <td>Silver Daraga Albay</td>
+                        <td> Legazpi City </td>
+                        <td> 16 March, 2024 </td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                        <td> <strong>₱150.00</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> @isabella</td>
+                        <td><img src="PICTURE/h.jpg" alt=""> Isabella Diane </td>
+                        <td> Bronze</td>
+                        <td> Daraga Albay </td>
+                        <td> 23 March, 2024 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>₱200.00</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> @daniel</td>
+                        <td><img src="picture/d.jpg" alt=""> Daniel Mae</td>
+                        <td> Silver</td>
+                        <td> Legazpi City </td>
+                        <td> 03  March, 2024 </td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                        <td> <strong>₱150.00</strong> </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="tr.js"></script>
+
+</body>
+
+</html>
